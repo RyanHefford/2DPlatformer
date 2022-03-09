@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: b53ed1e1eb93ccf4694eb34324ee6b13
+guid: 407a689baab00734d97883ff9ee3d802
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -130,8 +130,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d1b4a6a1015426a4a9ec09127f5e2cb4
-      internalID: -248124428
+      spriteID: 134155851528cbd4a9076d0b652a1253
+      internalID: -888749128
       vertices: []
       indices: 
       edges: []
@@ -151,8 +151,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 714a2fb641b857a49b5ca7724698ac3a
-      internalID: -501982618
+      spriteID: c9843476c2ae86841815a6c535221519
+      internalID: -1380867170
       vertices: []
       indices: 
       edges: []
@@ -172,8 +172,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 173ec16245e4c864eb18c65b142f60c6
-      internalID: -2106763602
+      spriteID: fc7ebe9b4262b874f8e42e48330f2676
+      internalID: 2077690455
       vertices: []
       indices: 
       edges: []
@@ -193,8 +193,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5fdafb8b9477f034fba333f10f972357
-      internalID: -1085413941
+      spriteID: 4a724ca0c3bf9d2418791ee064619b1c
+      internalID: -1864636941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerCharacter-Landing_4
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccb75205e885a11419f8da00401c5d56
+      internalID: 64045947
       vertices: []
       indices: 
       edges: []
@@ -210,10 +231,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      PlayerCharacter-Landing_1: -501982618
-      PlayerCharacter-Landing_3: -1085413941
-      PlayerCharacter-Landing_2: -2106763602
-      PlayerCharacter-Landing_0: -248124428
+      PlayerCharacter-Landing_1: -1380867170
+      PlayerCharacter-Landing_4: 64045947
+      PlayerCharacter-Landing_3: -1864636941
+      PlayerCharacter-Landing_2: 2077690455
+      PlayerCharacter-Landing_0: -888749128
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

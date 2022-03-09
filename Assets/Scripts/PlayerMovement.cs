@@ -8,7 +8,8 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float jumpHeight = 12;
     private Rigidbody2D body;
     private Animator animator;
-    private bool isGrounded = false;
+    public bool isGrounded = false;
+    public float horizontalInput;
 
     private void Awake()
     {
@@ -26,11 +27,11 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         //first check if in attack animation
-        if (!animator.GetBool("LightAttack") && !animator.GetBool("HeavyAttack"))
+        if (true)//!animator.GetBool("LightAttack") && !animator.GetBool("HeavyAttack"))
         {
             //get horizontal Movement
 
-            float horizontalInput = Input.GetAxis("Horizontal");
+            horizontalInput = Input.GetAxis("Horizontal");
 
             if (Input.GetKey(KeyCode.LeftShift))
             {
@@ -38,7 +39,7 @@ public class PlayerMovement : MonoBehaviour
             }
 
             body.velocity = new Vector2(horizontalInput * speed, body.velocity.y);
-            animator.SetFloat("MoveSpeed", Mathf.Abs(body.velocity.x));
+            //animator.SetFloat("MoveSpeed", Mathf.Abs(body.velocity.x));
 
             //check flip direction
             if (horizontalInput > 0.01f)
@@ -60,35 +61,47 @@ public class PlayerMovement : MonoBehaviour
             //check for attacks
             if (Input.GetKeyDown(KeyCode.Mouse0))
             {
-                animator.SetBool("LightAttack", true);
+                //animator.SetBool("LightAttack", true);
             }
             if (Input.GetKeyDown(KeyCode.Mouse1))
             {
-                animator.SetBool("HeavyAttack", true);
+                //animator.SetBool("HeavyAttack", true);
             }
         }
         else
         {
+            horizontalInput = 0;
             body.velocity = new Vector2(0, body.velocity.y);
         }
 
-        animator.SetFloat("VerticalVelocity", body.velocity.y);
+        //animator.SetFloat("VerticalVelocity", body.velocity.y);
 
-        animator.SetBool("IsGrounded", isGrounded);
+        //animator.SetBool("IsGrounded", isGrounded);
     }
 
     public void FinishLightAttack()
     {
-        animator.SetBool("LightAttack", false);
+        //animator.SetBool("LightAttack", false);
     }
 
     public void FinishHeavyAttack()
     {
-        animator.SetBool("HeavyAttack", false);
+        //animator.SetBool("HeavyAttack", false);
     }
 
-    private void OnTriggerStay2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        isGrounded = collision != null;
+        if (collision.CompareTag("Terrain"))
+        {
+            isGrounded = true;
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Terrain"))
+        {
+            isGrounded = false;
+        }
     }
 }
