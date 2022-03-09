@@ -8,6 +8,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float jumpHeight = 12;
     private Rigidbody2D body;
     private Animator animator;
+    private PlayerAnimationHandle animationHandle;
     public bool isGrounded = false;
     public float horizontalInput;
 
@@ -15,6 +16,7 @@ public class PlayerMovement : MonoBehaviour
     {
         body = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+        animationHandle = GetComponent<PlayerAnimationHandle>();
     }
 
     // Start is called before the first frame update
@@ -27,7 +29,7 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         //first check if in attack animation
-        if (true)//!animator.GetBool("LightAttack") && !animator.GetBool("HeavyAttack"))
+        if (!animationHandle.CheckIsBusy())
         {
             //get horizontal Movement
 
@@ -51,30 +53,35 @@ public class PlayerMovement : MonoBehaviour
                 transform.localScale = new Vector3(-1, 1, 1);
             }
 
-            //check jump
-            if (Input.GetKeyDown(KeyCode.Space))
+
+            //ACTIONS ONLY WHEN GROUNDED
+            if (isGrounded)
             {
-                body.velocity = new Vector2(body.velocity.x, jumpHeight);
-                
+                //check jump
+                if (Input.GetKeyDown(KeyCode.Space))
+                {
+                    body.velocity = new Vector2(body.velocity.x, jumpHeight);
+
+                }
+
+                //check for attacks
+                if (Input.GetKeyDown(KeyCode.Mouse0))
+                {
+                    animationHandle.MakeLightAttack();
+                }
+                if (Input.GetKeyDown(KeyCode.Mouse1))
+                {
+                    animationHandle.MakeHeavyAttack();
+                }
+
             }
 
-            //check for attacks
-            if (Input.GetKeyDown(KeyCode.Mouse0))
-            {
-                //animator.SetBool("LightAttack", true);
-            }
-            if (Input.GetKeyDown(KeyCode.Mouse1))
-            {
-                //animator.SetBool("HeavyAttack", true);
-            }
         }
         else
         {
             horizontalInput = 0;
             body.velocity = new Vector2(0, body.velocity.y);
         }
-
-        //animator.SetFloat("VerticalVelocity", body.velocity.y);
 
         //animator.SetBool("IsGrounded", isGrounded);
     }
@@ -93,7 +100,9 @@ public class PlayerMovement : MonoBehaviour
     {
         if (collision.CompareTag("Terrain"))
         {
+
             isGrounded = true;
+            animationHandle.JustLanded();
         }
     }
 

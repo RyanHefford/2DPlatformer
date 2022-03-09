@@ -6,6 +6,7 @@ public class PlayerAnimationHandle : MonoBehaviour
 {
     private float maxVerticalVelocity = 10.0f;
     private bool isBusy = false;
+    private bool justLanded = false;
 
     private Animator animator;
     private Rigidbody2D body;
@@ -41,11 +42,29 @@ public class PlayerAnimationHandle : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         if (isBusy)
         {
-            return;
+            if (!CheckAnimationComplete())
+            {
+                return;
+            }
+            else
+            {
+                animator.Play(PLAYER_IDLE);
+            }
+        }else if (justLanded)   //begin land animation
+        {
+            justLanded = false;
+            ChangeAnimation(PLAYER_LANDING);
+            if (body.velocity.y <= -14) //Play landing animation if fall is hard enough
+            {
+                isBusy = true;
+
+                return;
+            }
+            
         }
 
         //check if grounded
@@ -115,23 +134,36 @@ public class PlayerAnimationHandle : MonoBehaviour
     }
 
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private bool CheckAnimationComplete()
     {
-        if (collision.CompareTag("Terrain"))
+        if (animator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 0.95f)
         {
-            isBusy = true;
-            ChangeAnimation(PLAYER_LANDING);
-
-            float delay = animator.GetCurrentAnimatorClipInfo(0).Length;
-            Invoke("AnimationComplete", 0.417f);
-
+            isBusy = false;
+            return true;
         }
+        return false;
     }
 
-
-    private void AnimationComplete()
+    public bool CheckIsBusy()
     {
-        print("done");
-        isBusy = false;
+        return isBusy;
+    }
+
+    public void JustLanded()
+    {
+        justLanded = true;
+    }
+
+    public void MakeLightAttack()
+    {
+        animator.Play(PLAYER_LIGHT_ATTACK);
+        isBusy = true;
+
+    }
+
+    public void MakeHeavyAttack()
+    {
+        animator.Play(PLAYER_HEAVY_ATTACK);
+        isBusy = true;
     }
 }
