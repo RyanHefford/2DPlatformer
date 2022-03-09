@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 47b1487f1681e3641a37d233d53013cc
+guid: b53ed1e1eb93ccf4694eb34324ee6b13
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -116,7 +116,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: PlayerCharacter-LightAttack_0
+      name: PlayerCharacter-Landing_0
       rect:
         serializedVersion: 2
         x: 0
@@ -130,14 +130,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a6725648f3fe78c49b2c69083aa29847
-      internalID: -1993356765
+      spriteID: d1b4a6a1015426a4a9ec09127f5e2cb4
+      internalID: -248124428
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerCharacter-LightAttack_1
+      name: PlayerCharacter-Landing_1
       rect:
         serializedVersion: 2
         x: 32
@@ -151,14 +151,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b6336d7d353b98f4ca64e1b1dd7ecb53
-      internalID: 1816606333
+      spriteID: 714a2fb641b857a49b5ca7724698ac3a
+      internalID: -501982618
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerCharacter-LightAttack_2
+      name: PlayerCharacter-Landing_2
       rect:
         serializedVersion: 2
         x: 64
@@ -172,14 +172,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5853bcf89a40c334d8e6a5625ae07b1e
-      internalID: 1176542628
+      spriteID: 173ec16245e4c864eb18c65b142f60c6
+      internalID: -2106763602
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerCharacter-LightAttack_3
+      name: PlayerCharacter-Landing_3
       rect:
         serializedVersion: 2
         x: 96
@@ -193,113 +193,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9bfff63f456584e4dbcb02782fa8a8d2
-      internalID: -6222798
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PlayerCharacter-LightAttack_4
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0efd2456bf49f1642b75499b949c9b61
-      internalID: -1266193984
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PlayerCharacter-LightAttack_5
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7a36e56eaef175148b0c3108ad29f35d
-      internalID: 1818552827
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PlayerCharacter-LightAttack_6
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f89045d2ea4ad6143ba9d9bb97159862
-      internalID: -186390517
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PlayerCharacter-LightAttack_7
-      rect:
-        serializedVersion: 2
-        x: 224
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3b6e45fd0934de347a8ba1052fba3207
-      internalID: 281928126
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PlayerCharacter-LightAttack_8
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 556748ed78b46f4499d23c3423a6c40f
-      internalID: 1826978985
+      spriteID: 5fdafb8b9477f034fba333f10f972357
+      internalID: -1085413941
       vertices: []
       indices: 
       edges: []
@@ -315,15 +210,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      PlayerCharacter-LightAttack_2: 1176542628
-      PlayerCharacter-LightAttack_6: -186390517
-      PlayerCharacter-LightAttack_0: -1993356765
-      PlayerCharacter-LightAttack_7: 281928126
-      PlayerCharacter-LightAttack_8: 1826978985
-      PlayerCharacter-LightAttack_4: -1266193984
-      PlayerCharacter-LightAttack_5: 1818552827
-      PlayerCharacter-LightAttack_1: 1816606333
-      PlayerCharacter-LightAttack_3: -6222798
+      PlayerCharacter-Landing_1: -501982618
+      PlayerCharacter-Landing_3: -1085413941
+      PlayerCharacter-Landing_2: -2106763602
+      PlayerCharacter-Landing_0: -248124428
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

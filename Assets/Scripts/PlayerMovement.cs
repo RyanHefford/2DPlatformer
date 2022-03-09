@@ -8,7 +8,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float jumpHeight = 12;
     private Rigidbody2D body;
     private Animator animator;
-
+    private bool isGrounded = false;
 
     private void Awake()
     {
@@ -54,6 +54,7 @@ public class PlayerMovement : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.Space))
             {
                 body.velocity = new Vector2(body.velocity.x, jumpHeight);
+                
             }
 
             //check for attacks
@@ -71,6 +72,9 @@ public class PlayerMovement : MonoBehaviour
             body.velocity = new Vector2(0, body.velocity.y);
         }
 
+        animator.SetFloat("VerticalVelocity", body.velocity.y);
+
+        animator.SetBool("IsGrounded", isGrounded);
     }
 
     public void FinishLightAttack()
@@ -81,5 +85,10 @@ public class PlayerMovement : MonoBehaviour
     public void FinishHeavyAttack()
     {
         animator.SetBool("HeavyAttack", false);
+    }
+
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        isGrounded = collision != null;
     }
 }
