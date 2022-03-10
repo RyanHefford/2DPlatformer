@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 5a56384326cd6044597e114b640c6b61
+guid: ad9c29c2975835443876ab3e8c42ff25
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -68,7 +68,7 @@ TextureImporter:
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: -1
+    textureFormat: 4
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
@@ -116,7 +116,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: BrickGround-Sheet 1_0
+      name: CarpetFloor_0
       rect:
         serializedVersion: 2
         x: 0
@@ -130,14 +130,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 510e0bb2478b74e42b71a766ef1ab012
-      internalID: 1383120393
+      spriteID: f8455801d73bbeb44b0a5678df1aa7fa
+      internalID: 1500195351
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BrickGround-Sheet 1_1
+      name: CarpetFloor_1
       rect:
         serializedVersion: 2
         x: 32
@@ -151,14 +151,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d056235ac2e0a444c985fdd93cad90df
-      internalID: 441879802
+      spriteID: d8de9c834da5de94da1ce1cb1ed823d4
+      internalID: -1395956987
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BrickGround-Sheet 1_2
+      name: CarpetFloor_2
       rect:
         serializedVersion: 2
         x: 64
@@ -172,14 +172,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 295ed88f284cfae4fb08f34cb4d44095
-      internalID: -1001840704
+      spriteID: 3c27d8d05252b014fb48faa04f034928
+      internalID: 2105864917
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BrickGround-Sheet 1_3
+      name: CarpetFloor_3
       rect:
         serializedVersion: 2
         x: 96
@@ -193,14 +193,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 653c0e9fe1f824447afc9839e683cf14
-      internalID: 1467678549
+      spriteID: 660f7c3d42043d842bc87963bd797d18
+      internalID: -2061670229
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BrickGround-Sheet 1_4
+      name: CarpetFloor_4
       rect:
         serializedVersion: 2
         x: 128
@@ -214,14 +214,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e2a8f43ce9099ee4b894350102706bb7
-      internalID: 416563687
+      spriteID: c4cf453bde39c8041b4b5204c68a31ef
+      internalID: -965350736
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BrickGround-Sheet 1_5
+      name: CarpetFloor_5
       rect:
         serializedVersion: 2
         x: 0
@@ -235,14 +235,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ed81277f6faa4df4b83ee884a3943d4f
-      internalID: 1272570501
+      spriteID: b950de3ba2eaed842bb67f821b40bfad
+      internalID: 948629974
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BrickGround-Sheet 1_6
+      name: CarpetFloor_6
       rect:
         serializedVersion: 2
         x: 32
@@ -256,14 +256,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e3c3a728899433942b868c894609b876
-      internalID: 1940083296
+      spriteID: c1192256daacda24a8f3e303b4ece611
+      internalID: 527165648
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BrickGround-Sheet 1_7
+      name: CarpetFloor_7
       rect:
         serializedVersion: 2
         x: 64
@@ -277,14 +277,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 344aa5ab01da87b4ab9aa09d086b2fd2
-      internalID: -2016673539
+      spriteID: 14984dd8f7ce53442adb12b3ac7616c0
+      internalID: 1878784834
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BrickGround-Sheet 1_8
+      name: CarpetFloor_8
       rect:
         serializedVersion: 2
         x: 96
@@ -298,14 +298,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 213182ee625dcbc4294b6ae7b20fd77f
-      internalID: -885606819
+      spriteID: dfd89df591130784c8ba774e12ae1ba5
+      internalID: -689402243
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BrickGround-Sheet 1_9
+      name: CarpetFloor_9
       rect:
         serializedVersion: 2
         x: 128
@@ -319,14 +319,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a545edf00c97bb3488e56dfd10426287
-      internalID: -1871043013
+      spriteID: 90ff81afcc0b9a143833039a08494a5d
+      internalID: -422168786
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BrickGround-Sheet 1_10
+      name: CarpetFloor_10
       rect:
         serializedVersion: 2
         x: 0
@@ -340,14 +340,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d863a71d0c11b1048b407138656d2826
-      internalID: -375261601
+      spriteID: fb0e6929e4618674db408e21a974c93a
+      internalID: -1369029234
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BrickGround-Sheet 1_11
+      name: CarpetFloor_11
       rect:
         serializedVersion: 2
         x: 32
@@ -361,14 +361,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d1139e2cdc014074abc53fcaa6effc4c
-      internalID: 912555500
+      spriteID: 85c3e2c27d10fbc45af8e5ce3acc5eec
+      internalID: -876127571
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BrickGround-Sheet 1_12
+      name: CarpetFloor_12
       rect:
         serializedVersion: 2
         x: 64
@@ -382,14 +382,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8684259aac82f694a87a33ba4483e6f9
-      internalID: -1213084268
+      spriteID: a0e9c4918a1a1874eb62fcc234f15057
+      internalID: -63584337
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BrickGround-Sheet 1_13
+      name: CarpetFloor_13
       rect:
         serializedVersion: 2
         x: 96
@@ -403,14 +403,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1ccf7df3e02ea6e4f95fdfcf86608f34
-      internalID: -527571600
+      spriteID: c881db4fbd4e8204480280de53dd6da5
+      internalID: 644951078
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BrickGround-Sheet 1_14
+      name: CarpetFloor_14
       rect:
         serializedVersion: 2
         x: 128
@@ -424,50 +424,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4b21f1dc885ec034094d6ec53fa925e1
-      internalID: -1861641009
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BrickGround-Sheet 1_15
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: eef9a94da54d7e44a82532d3177c90ef
-      internalID: -1838958801
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BrickGround-Sheet 1_16
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: dbff0ae7802e6c24ea6350c9259c8a54
-      internalID: 112747397
+      spriteID: 95ba021c4fd1da947a6fb9ac15aa9a86
+      internalID: 792752387
       vertices: []
       indices: 
       edges: []
@@ -483,23 +441,21 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      BrickGround-Sheet 1_15: -1838958801
-      BrickGround-Sheet 1_9: -1871043013
-      BrickGround-Sheet 1_0: 1383120393
-      BrickGround-Sheet 1_4: 416563687
-      BrickGround-Sheet 1_14: -1861641009
-      BrickGround-Sheet 1_10: -375261601
-      BrickGround-Sheet 1_12: -1213084268
-      BrickGround-Sheet 1_6: 1940083296
-      BrickGround-Sheet 1_16: 112747397
-      BrickGround-Sheet 1_5: 1272570501
-      BrickGround-Sheet 1_2: -1001840704
-      BrickGround-Sheet 1_3: 1467678549
-      BrickGround-Sheet 1_8: -885606819
-      BrickGround-Sheet 1_11: 912555500
-      BrickGround-Sheet 1_7: -2016673539
-      BrickGround-Sheet 1_13: -527571600
-      BrickGround-Sheet 1_1: 441879802
+      CarpetFloor_12: -63584337
+      CarpetFloor_8: -689402243
+      CarpetFloor_6: 527165648
+      CarpetFloor_14: 792752387
+      CarpetFloor_5: 948629974
+      CarpetFloor_3: -2061670229
+      CarpetFloor_9: -422168786
+      CarpetFloor_2: 2105864917
+      CarpetFloor_4: -965350736
+      CarpetFloor_10: -1369029234
+      CarpetFloor_0: 1500195351
+      CarpetFloor_1: -1395956987
+      CarpetFloor_11: -876127571
+      CarpetFloor_7: 1878784834
+      CarpetFloor_13: 644951078
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
